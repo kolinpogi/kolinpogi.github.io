@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>genuine question lang</title> 
+  <style>
+        body {
+            background-color: #f6f2af;
+            font-family: 'Oswald', sans-serif;
+            color: #7b3933;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 25px;
+        }
+        button {
+            border: 2px solid white;
+            border-radius: 50px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #omsim {
+            background-color: #ee8484;
+        }
+        #no {
+            background-color: #7f292c;
+        }
+        img {
+            max-width: 100%;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <img src="https://media.giphy.com/media/pEOHtW2hpwrE0km5kl/giphy.gif" alt="GIF"> 
+  <h1 id="message">tanga ka ba hoy</h1> <button id="omsim">omsim</button> <button id="no">no</button> 
+  <script>
+        document.getElementById('no').onclick = function() {
+            this.style.position = 'absolute';
+            this.style.top = Math.random() * window.innerHeight + 'px';
+            this.style.left = Math.random() * window.innerWidth + 'px';
+        };
+
+        document.getElementById('omsim').onclick = function() {
+            document.getElementById('message').innerText = 'buti alam mo😘🥰😍🤩🤗☺😊😇🥳😌😉😋😛😝😜🤪😎😏😡😤🥵🥶😩😱😨😓🤐🤢🤧🤑😫😣🎀🎀🎀🎀🎀';
+            document.querySelector('img').src = "https://media.giphy.com/media/vlA2kWjGy2tZUU1X5d/giphy.gif";
+            document.getElementById('omsim').style.display = 'none';
+            document.getElementById('no').style.display = 'none';
+            changeBackground();
+        };
+
+        function changeBackground() {
+    document.body.style.backgroundColor = "white"
+}
+    </script> 
+ 
+</body></html>
